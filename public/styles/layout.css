@@ -15,9 +15,15 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  display: flex;
+  color: #ffffff;
+  background-color: rgb(231, 211, 197);
   font-size: 24px;
+  font-family: 'Bungee', cursive;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*

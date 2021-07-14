@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  background-color: rgb(231, 211, 197);
+  height: max-content;
+  width: 90%;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  width: fit-content
+}
