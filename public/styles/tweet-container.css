@@ -2,7 +2,7 @@
   display: flex ;
   margin-top: 100px;
   height: auto;
-  width: 50%;
+  width: 60%;
   align-self: center;
   flex-direction: column;
   border: 2px double dimgray;
@@ -23,11 +23,22 @@
   align-content: center;
 }
 
+.tweet-body {
+  display: flex;
+  align-self: flex-start;
+}
+
 .tweet-footer {
   display: flex;
   height: 20px;
   align-items: center;
   color: black;
+}
+
+.icons {
+  display: flex;
+  margin-left: auto;
+  align-items: baseline;
 }
 
 .fa-flag:hover {
