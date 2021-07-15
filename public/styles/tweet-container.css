@@ -24,7 +24,7 @@
 
 .tweet-footer {
   display: flex;
-  height: auto;
+  height: 20px;
   align-items: center;
   color: black;
 }

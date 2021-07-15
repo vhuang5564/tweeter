@@ -17,8 +17,8 @@ html {
 body {
   display: flex;
   color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: rgb(231, 211, 197);
-  font-family: 'Bungee', cursive;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
