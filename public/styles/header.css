@@ -1,10 +1,11 @@
 header {
   display: flex;
-  height: 400px;
+  height: 430px; /* 400px? */
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: darkorchid;
+  background-color: aliceblue;
+  font-size: 24px;
 }

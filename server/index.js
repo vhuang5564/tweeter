@@ -36,5 +36,7 @@ app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
 
-app.post('/', (req, res) => {
+app.post('/api/posts', (req, res) => {
+  const tweet = req.body.text;
+  console.log(tweet);
 })

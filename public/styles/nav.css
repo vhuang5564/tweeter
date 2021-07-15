@@ -16,6 +16,7 @@
 
 .parent {
   display: flex;
+  height: 60px; /* lighthouse wants 120px */
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
@@ -25,21 +26,22 @@
 
 .left {
   display: flex;
-  height: 120px;
   color: #ffffff;
   background-color: #4056A1;
   font-size: 24px;
   font-family: 'Bungee', cursive;
   margin-left: 1.5em;
   margin-right: 1.5em;
+  margin-top: 10px;
 }
 
 .right {
-  height: 120px;
+  display: flex;
   color: #ffffff;
   background-color: #4056A1;
   font-size: 24px;
   font-family: 'Bungee', cursive;
   margin-right: 1.5em;
   margin-left: 1.5em;
+  margin-top: 10px;
 } 

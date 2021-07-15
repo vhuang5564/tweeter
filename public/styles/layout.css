@@ -18,7 +18,6 @@ body {
   display: flex;
   color: #ffffff;
   background-color: rgb(231, 211, 197);
-  font-size: 24px;
   font-family: 'Bungee', cursive;
   justify-content: space-between;
   flex-wrap: wrap;

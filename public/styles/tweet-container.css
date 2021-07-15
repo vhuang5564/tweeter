@@ -8,3 +8,23 @@
   border: 2px double dimgray;
   border-radius: 15px;
 }
+
+.tweet-container:hover {
+  box-shadow: 5px 10px skyblue;
+}
+
+.tweet-header {
+  display: flex;
+  height: auto;
+  color: black;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.tweet-footer {
+  display: flex;
+  height: auto;
+  align-items: center;
+  color: black;
+}

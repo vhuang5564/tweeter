@@ -34,28 +34,36 @@
     </nav>
 
     <header>
-      <div><img src="/images/profile-hex.png"> </div>
+      <div><img src="/images/profile-hex.png" style="margin-top: 50px"></div>
       <div><h2>King Kong</h2></div>
     </header>
     
     <main>
       <!-- lighthouse code -->
-      <section class="new-tweet">
-        <form action="/" method="POST"> <!-- action / method not needed? -->
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div>
-            <button name="button" type="submit">Tweet</button>
+        <form id="new-tweet" class="new-tweet">
+          <textarea class="text" name="text" id="tweet-text" placeholder="What are you humming about?" style="order: 1;"></textarea>
+          <div class="button">
+            <button id="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-      </section>
       <article class="tweet-container">
-        <output>
+        <header class="tweet-header">
+          <h6>avatar</h6>
+          <h6>name</h6>
+          <h6 style="margin-left: auto">handle</h6>
+        </header>
+        <body class="tweet-body">
           this is the output
-        </output>
-
+        </body>
+        <footer class="tweet-footer">
+          <h6>tweet created</h6>
+          <h6 style="margin-left: auto;">icons</h6>
+        </footer>
       </article>
+
+      <section name="twat-container"></section>
+
     </main>
 
 
@@ -65,11 +73,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
     <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script src="/scripts/composer-char-counter.js"></script>
+    <script src="/scripts/new-tweet.js"></script>
+    
+
 
   </body>
 </html>

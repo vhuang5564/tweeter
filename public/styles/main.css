@@ -5,8 +5,3 @@ main {
   width: 90%;
   flex-direction: column;
 }
-
-.button {
-  display: flex;
-  width: fit-content
-}
