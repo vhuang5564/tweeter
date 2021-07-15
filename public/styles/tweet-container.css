@@ -17,6 +17,7 @@
   display: flex;
   height: auto;
   color: black;
+  background-color: rgb(231, 211, 197);
   flex-direction: initial;
   justify-content: flex-start;
   align-content: center;
@@ -27,4 +28,16 @@
   height: 20px;
   align-items: center;
   color: black;
+}
+
+.fa-flag:hover {
+  color: cornflowerblue;
+}
+
+.fa-retweet:hover {
+  color: cornflowerblue;
+}
+
+.fa-heart:hover {
+  color: cornflowerblue;
 }

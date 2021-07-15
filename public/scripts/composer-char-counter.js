@@ -19,7 +19,4 @@ $(document).ready(function() {
       alert('Cannot create a tweet when character count is above 140');
     }
   })
-
-
 })
-
