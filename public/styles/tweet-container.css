@@ -1,9 +1,9 @@
 .tweet-container {
   display: flex ;
   margin-top: 100px;
-  align-self: center;
   height: auto;
   width: 50%;
+  align-self: center;
   flex-direction: column;
   border: 2px double dimgray;
   border-radius: 15px;

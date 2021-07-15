@@ -16,7 +16,7 @@ html {
 
 body {
   display: flex;
-  color: #ffffff;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: rgb(231, 211, 197);
   justify-content: space-between;
