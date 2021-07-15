@@ -37,7 +37,7 @@ $(document).ready(() => {
 const renderTweets = function(tweets) {
   for (tweet of tweets) {
   const $tweet = createTweet(tweet);
-  $('#twilcontainer').prepend($tweet)
+  $('#tweet-container').prepend($tweet)
   }
 }
 
@@ -46,16 +46,15 @@ const $form = $('#new-tweet');
 $form.on('submit', function(e) { // when text is input and tweet is pressed
   e.preventDefault()
   const urlEncodedData = $(this).serialize();
-  console.log(urlEncodedData);
+  
+  if ($('.counter').val() < 0) { // if counter is < 0 stops tweet
+    return;
+  }
 
   $.post('/tweets', urlEncodedData, (response) => {
-    console.log('posting');
-    console.log(response);
-    fetchPosts();
-    
+    fetchPosts(); 
+    $('.text').val(''); // emptys text bar after tweet
   });
-
-
 })
 
 
