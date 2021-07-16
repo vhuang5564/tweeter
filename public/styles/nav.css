@@ -1,22 +1,13 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
- html {
+html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
 .parent {
   display: flex;
-  height: 80px; /* lighthouse wants 120px */
+  height: 80px;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;

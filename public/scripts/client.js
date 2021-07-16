@@ -7,7 +7,6 @@ $(document).ready(() => {
     });
   };
 
-  
   const createTweet = (tweet) => {
     const time = timeago.format(tweet.created_at);
     const $avatars = $(`<img src="${tweet.user.avatars}">`);
@@ -27,11 +26,7 @@ $(document).ready(() => {
     $article.append($header, $body, $footer);
 
     return $article;
-
   };
-
-
-
 
   const renderTweets = function(tweets) { // empties out all tweets and remakes them
     $('#tweet-container').empty();
@@ -40,7 +35,6 @@ $(document).ready(() => {
       $('#tweet-container').prepend($tweet);
     }
   };
-
 
   const $form = $('#new-tweet');
   $form.on('submit', function(e) { // when text is input and tweet is pressed
@@ -56,7 +50,5 @@ $(document).ready(() => {
       $('.text').val(''); // emptys text bar after tweet
     });
   });
-
-
 
 });
