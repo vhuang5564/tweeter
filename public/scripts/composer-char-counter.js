@@ -12,11 +12,4 @@ $(document).ready(function() {
       $('.counter').css('color', 'red')
     }
   })
-
-  const $tweetButton = $('#tweet-button'); // Alerts user when trying to create a tweet with a character count > 140
-  $tweetButton.on('click', (event) => {
-    if ($('.counter').val() < 0) {
-      alert('Cannot create a tweet when character count is above 140');
-    }
-  })
 })

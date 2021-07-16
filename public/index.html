@@ -51,31 +51,19 @@
     </header>
     
     <main>
-      <!-- lighthouse code -->
+
+      <div class="slidedown" id="slidedown">
+        Error: Cannot create a tweet when character count is above 140.
+      </div>
+
         <form id="new-tweet" class="new-tweet">
-          <textarea class="text" name="text" id="tweet-text" placeholder="What are you humming about?" style="order: 1;"></textarea>
+          <textarea class="text" required name="text" id="tweet-text" placeholder="What are you humming about?" style="order: 1;"></textarea>
           <div class="button">
             <button id="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-      <!-- <article class="tweet-container">
-        <header class="tweet-header">
-          <h6>avatar</h6>
-          <h6>name</h6>
-          <h6 style="margin-left: auto">handle</h6>
-        </header>
-        <body class="tweet-body">
-          this is the output
-        </body>
-        <footer class="tweet-footer">
-          <h6>tweet created</h6>
-          <h6 style="margin-left: auto;"><i class="fas fa-flag"></i><i class="fas fa-retweet" style="margin: 0.2em"></i><i class="fas fa-heart"></i></h6>
-        </footer>
-      </article> -->
-
       <article id="tweet-container" class="tweet-container"></article>
-
     </main>
 
 
@@ -91,6 +79,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script src="/scripts/composer-char-counter.js"></script>
+    <script src="/scripts/slidedown.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     

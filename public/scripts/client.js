@@ -5,34 +5,11 @@
  */
 
 $(document).ready(() => {
-
-
   const fetchPosts = () => {
     $.getJSON('/tweets', (posts) => {
       renderTweets(posts);
     })
   }
-
-  fetchPosts()
-
-
-  // const createTweet = (tweet) => {
-  //   const time = timeago.format(tweet.created_at)
-  // return $(`<article class="tweet-container">
-  //     <header class="tweet-header">
-  //       <img src="${tweet.user.avatars}">
-  //       <h6>${tweet.user.name}</h6>
-  //       <h6 style="margin-left: auto">${tweet.user.handle}</h6>
-  //     </header>
-  //     <body class="tweet-body">
-  //       ${tweet.content.text}
-  //     </body>
-  //     <footer class="tweet-footer">
-  //       <h6>${time}</h6>
-  //       <h6 style="margin-left: auto;"><i class="fas fa-flag"></i><i class="fas fa-retweet" style="margin: 0.2em"></i><i class="fas fa-heart"></i></h6>
-  //     </footer>
-  //   </article>`)
-  // }
 
   
   const createTweet = (tweet) => {
@@ -61,6 +38,7 @@ $(document).ready(() => {
 
 
 const renderTweets = function(tweets) {
+  $('#tweet-container').empty();
   for (tweet of tweets) {
   const $tweet = createTweet(tweet);
   $('#tweet-container').prepend($tweet)
