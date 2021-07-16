@@ -1,6 +1,6 @@
 main {
   display: flex;
-  background-color: rgb(231, 211, 197);
+  background-color: lavender;
   height: max-content;
   width: 90%;
   flex-direction: column;

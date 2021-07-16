@@ -18,7 +18,8 @@ body {
   display: flex;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: rgb(231, 211, 197);
+  background-color: #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;

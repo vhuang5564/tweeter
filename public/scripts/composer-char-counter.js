@@ -7,7 +7,7 @@ $(document).ready(function() {
     counterVal = $('.counter').val(140 - value); // changes output value of tweet
 
     if (140 - value >= 0) { // changes number next to tweet if color is different
-      $('.counter').css('color', 'white')
+      $('.counter').css('color', 'black')
     } else if (140 - value < 0) {
       $('.counter').css('color', 'red')
     }

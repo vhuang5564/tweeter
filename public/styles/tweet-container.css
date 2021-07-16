@@ -10,22 +10,27 @@
 }
 
 .tweet-container:hover {
-  box-shadow: 5px 10px skyblue;
+  box-shadow: 3px 6px #4056A1;
 }
 
 .tweet-header {
   display: flex;
   height: auto;
   color: black;
-  background-color: rgb(231, 211, 197);
+  background-color: aliceblue;
   flex-direction: initial;
   justify-content: flex-start;
   align-content: center;
+  border-radius: inherit;
 }
 
 .tweet-body {
   display: flex;
   align-self: flex-start;
+  background-color: aliceblue;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+  width: 100%;
+  align-content: flex-start;
 }
 
 .tweet-footer {
@@ -33,6 +38,9 @@
   height: 20px;
   align-items: center;
   color: black;
+  background-color: aliceblue;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+  border-radius: inherit;
 }
 
 .icons {
