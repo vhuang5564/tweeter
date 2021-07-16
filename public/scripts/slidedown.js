@@ -12,4 +12,9 @@ $(document).ready(function() {
     }
   });
 
+  const $angular = $('#angular');
+  $angular.on('click', () => {
+    $('html, body').animate( { scrollTop: 0 }, 'slow');
+  });
+
 });
