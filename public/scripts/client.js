@@ -1,15 +1,11 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+/* global $ */
 
 $(document).ready(() => {
   const fetchPosts = () => {
     $.getJSON('/tweets', (posts) => {
       renderTweets(posts);
-    })
-  }
+    });
+  };
 
   
   const createTweet = (tweet) => {
@@ -32,35 +28,35 @@ $(document).ready(() => {
 
     return $article;
 
-  }
+  };
 
 
 
 
-const renderTweets = function(tweets) {
-  $('#tweet-container').empty();
-  for (tweet of tweets) {
-  const $tweet = createTweet(tweet);
-  $('#tweet-container').prepend($tweet)
-  }
-}
+  const renderTweets = function(tweets) { // empties out all tweets and remakes them
+    $('#tweet-container').empty();
+    for (const tweet of tweets) {
+      const $tweet = createTweet(tweet);
+      $('#tweet-container').prepend($tweet);
+    }
+  };
 
 
-const $form = $('#new-tweet');
-$form.on('submit', function(e) { // when text is input and tweet is pressed
-  e.preventDefault()
-  const urlEncodedData = $(this).serialize();
+  const $form = $('#new-tweet');
+  $form.on('submit', function(e) { // when text is input and tweet is pressed
+    e.preventDefault();
+    const urlEncodedData = $(this).serialize();
 
-  if ($('.counter').val() < 0) { // if counter is < 0 stops tweet
-    return;
-  }
+    if ($('.counter').val() < 0) { // if counter is < 0 stops tweet
+      return;
+    }
 
-  $.post('/tweets', urlEncodedData, (response) => {
-    fetchPosts(); 
-    $('.text').val(''); // emptys text bar after tweet
+    $.post('/tweets', urlEncodedData, () => {
+      fetchPosts();
+      $('.text').val(''); // emptys text bar after tweet
+    });
   });
-})
 
 
 
-})
+});
