@@ -31,9 +31,8 @@
 
 .tweet-button {
   padding: 0 14px;
-  background-color: #feac32;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+  background-image: linear-gradient(#bdb2f7, #ffffff);
+  border: 3px solid #8a85ec;
   font-size: 16;
   font-weight: bold;
 }
