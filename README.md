@@ -4,7 +4,9 @@ Tweeter is a simple, single-page Twitter clone. Tweets inputted will return a ra
 
 ## Final Product
 
-!["Screenshot of tweeter page"](https://github.com/vhuang5564/tweeter/blob/master/public/images/tweeter.png)
+!["Screenshot of tweeter page"](https://github.com/vhuang5564/tweeter/blob/master/public/images/tweeter-web.png)
+
+!["Screenshot of mobile tweeter page"](https://github.com/vhuang5564/tweeter/blob/master/public/images/tweeter.png)
 
 !["Screenshot of tweets"](https://github.com/vhuang5564/tweeter/blob/master/public/images/tweets.png)
 
