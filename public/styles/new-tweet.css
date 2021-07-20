@@ -4,12 +4,12 @@
   flex-direction: column-reverse;
   width: 50%;
   align-self: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .text {
   display: flex;
-  height: 24px;
+  height: 1.5rem;
   width: 100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12;
@@ -30,7 +30,7 @@
 }
 
 .tweet-button {
-  padding: 0 14px;
+  padding: 0 1rem;
   background-image: linear-gradient(#bdb2f7, #ffffff);
   border: 3px solid #8a85ec;
   font-size: 16;
@@ -40,7 +40,7 @@
 .slidedown {
   display: none;
   align-self: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: red;
   border: 2px solid red;

@@ -6,11 +6,11 @@
   align-self: center;
   flex-direction: column;
   border: 2px double dimgray;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .tweet-container:hover {
-  box-shadow: 3px 6px #4056A1;
+  box-shadow: 0.2rem 0.4rem #4056A1;
 }
 
 .tweet-header {
@@ -36,7 +36,7 @@
 
 .tweet-footer {
   display: flex;
-  height: 20px;
+  height: 1.25rem;
   align-items: center;
   color: black;
   background-color: aliceblue;
