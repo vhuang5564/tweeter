@@ -7,11 +7,13 @@ $(document).ready(() => {
     });
   };
 
+  fetchPosts();
+
   const createTweet = (tweet) => {
     const time = timeago.format(tweet.created_at);
     const $avatars = $(`<img src="${tweet.user.avatars}">`);
     const $name = $("<h6>").text(`${tweet.user.name}`);
-    const $handle = $(`<h6 style="margin-left: auto">`).text(`${tweet.user.handle}`);
+    const $handle = $(`<h6 style="margin-left: auto; padding: 2px">`).text(`${tweet.user.handle}`);
     const $header = $('<header>').addClass('tweet-header');
     $header.append($avatars, $name, $handle);
 

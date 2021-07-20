@@ -31,6 +31,7 @@
   background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
   width: 100%;
   align-content: flex-start;
+  padding: 2px;
 }
 
 .tweet-footer {
@@ -41,6 +42,7 @@
   background-color: aliceblue;
   background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
   border-radius: inherit;
+  padding: 5px;
 }
 
 .icons {
