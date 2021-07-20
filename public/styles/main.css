@@ -1,7 +1,7 @@
 main {
   display: flex;
   background-color: lavender;
-  height: max-content;
   width: 90%;
   flex-direction: column;
+  margin-top: 5rem;
 }
