@@ -23,5 +23,3 @@ Tweeter is a simple, single-page Twitter clone. Tweets inputted will return a ra
 - Node 5.10.x or above
 - Chance
 - md5
-
-

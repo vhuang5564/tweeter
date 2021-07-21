@@ -50,6 +50,7 @@ $(document).ready(() => {
     $.post('/tweets', urlEncodedData, () => {
       fetchPosts();
       $('.text').val(''); // emptys text bar after tweet
+      $('.counter').val('140'); // resets counter after tweet
     });
   });
 
